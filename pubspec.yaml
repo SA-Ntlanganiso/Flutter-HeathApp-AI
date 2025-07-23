@@ -1,0 +1,69 @@
+name: agcare_plus
+description: AGCare+ Healthcare Platform
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # ===== CORE =====
+  flutter_riverpod: ^2.4.9
+  hooks_riverpod: ^2.4.9
+  get_it: ^7.6.4
+  
+  # ===== DATABASE =====
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  mongo_dart: ^0.10.3
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+  flutter_tts: ^3.8.5
+  
+  # ===== STATE MANAGEMENT =====
+  collection: ^1.17.1
+  
+  # ===== INTERNATIONALIZATION =====
+  intl: ^0.18.1
+  
+  # ===== UI COMPONENTS =====
+  syncfusion_flutter_datepicker: ^22.1.36
+  table_calendar: ^3.0.9
+  flutter_slidable: ^2.0.0
+  percent_indicator: ^4.2.2
+  fl_chart: ^0.66.0
+  shimmer: ^3.0.0
+  badges: ^3.0.0
+  cached_network_image: ^3.4.1
+  
+  # ===== FORM HELPERS =====
+  flutter_form_builder: ^9.0.0
+  datetime_picker_formfield: ^2.0.0
+  
+  # ===== UTILITIES =====
+  url_launcher: ^6.2.2
+  geolocator: ^10.1.0
+  connectivity_plus: ^5.0.2
+  speech_to_text: ^6.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.2
+  build_runner: ^2.4.7
+  isar_generator: ^3.1.0+1
+  riverpod_generator: 2.4.0
+  json_serializable: ^6.7.1
+  flutter_lints: ^5.0.0
+  very_good_analysis: ^5.1.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/medical_terms/
+    - assets/ai_prompts/
+    - assets/fonts/
