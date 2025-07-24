@@ -1,16 +1,35 @@
-# mobile_app
+# Flutter HealthApp AI
 
-A new Flutter project.
+A healthcare application with AI symptom analysis built with Flutter.
+
+## Features
+- AI-powered symptom checker
+- Patient health tracking
+- Medical appointment booking
+
+## Demo
+[![App Demo](https://img.shields.io/badge/View_Full_Demo_Video-blue?style=for-the-badge)](assets/videos/saas-app.mp4)
+
+![App Preview](assets/images/demo-preview.gif)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter 3.0+
+- Dart 2.17+
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
+```bash
+git clone https://github.com/SA-Ntlanganiso/Flutter-HeathApp-AI.git
+cd Flutter-HeathApp-AI
+flutter pub get
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Technical Stack
+- Flutter Framework
+- Riverpod State Management
+- Google's Gemma AI
+- MongoDB Atlas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+*Note: The demo video shows work-in-progress features*
