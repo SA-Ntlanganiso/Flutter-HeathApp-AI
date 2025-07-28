@@ -18,7 +18,7 @@ void main() async {
   
   try {
     sharedPrefs = await SharedPreferences.getInstance();
-    debugPrint('✅ SharedPreferences initialized successfully');
+    debugPrint(' SharedPreferences initialized successfully');
   } catch (e) {
     debugPrint('SharedPreferences initialization failed: $e');
   }
