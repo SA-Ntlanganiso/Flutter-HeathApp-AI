@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mongo_dart/mongo_dart.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'core/navigation/auth_wrapper.dart';
-import 'core/navigation/app_router.dart';  // Add this import
+import 'core/navigation/app_router.dart'; 
 
 final nullableSharedPreferencesProvider = Provider<SharedPreferences?>((ref) => null);
 final nullableMongoDbProvider = Provider<Db?>((ref) => null);
@@ -20,15 +20,15 @@ void main() async {
     sharedPrefs = await SharedPreferences.getInstance();
     debugPrint('✅ SharedPreferences initialized successfully');
   } catch (e) {
-    debugPrint('❌ SharedPreferences initialization failed: $e');
+    debugPrint('SharedPreferences initialization failed: $e');
   }
 
   try {
     db = Db('');
     await db.open();
-    debugPrint('✅ MongoDB connected successfully');
+    debugPrint('MongoDB connected successfully');
   } catch (e) {
-    debugPrint('❌ MongoDB connection failed: $e');
+    debugPrint('MongoDB connection failed: $e');
   }
 
   runApp(
@@ -44,11 +44,11 @@ void main() async {
   );
 }
 
-class AGCarePlusApp extends ConsumerWidget {  // Changed to ConsumerWidget
+class AGCarePlusApp extends ConsumerWidget { 
   const AGCarePlusApp({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {  // Added WidgetRef parameter
+  Widget build(BuildContext context, WidgetRef ref) {  
     return MaterialApp(
       title: 'AGCare+',
       theme: ThemeData(
@@ -57,7 +57,7 @@ class AGCarePlusApp extends ConsumerWidget {  // Changed to ConsumerWidget
       ),
       home: const AuthWrapper(),
       debugShowCheckedModeBanner: false,
-      onGenerateRoute: (settings) => AppRouter.generateRoute(settings, ref),  // Added this line
+      onGenerateRoute: (settings) => AppRouter.generateRoute(settings, ref), 
     );
   }
 }
